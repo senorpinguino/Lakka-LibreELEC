@@ -8,4 +8,4 @@ before_install:
     - docker pull elpinguino/lakkabuild
 
 script:
-    - docker run -v $PWD:/work -w /work elpinguino/lakkabuild "DISTRO=Lakka PROJECT=Chip ARCH=arm make image"
+    - docker run -v $PWD:/work -w /work elpinguino/lakkabuild -e DISTRO=Lakka -e PROJECT=Chip -e ARCH=arm make image
