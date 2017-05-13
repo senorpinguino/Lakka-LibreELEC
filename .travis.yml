@@ -1,9 +1,11 @@
 language: c
 
 os: linux
-dist: xenial
+dist: trusty
 sudo: required
 
+before_install:
+    - docker pull elpinguino/lakkabuild
+
 script:
-    - sudo apt-get update && sudo apt-get install -y lsdiff gperf makeinfo lzop xsltproc
-    - DISTRO=Lakka PROJECT=Chip ARCH=arm make image
+    - docker run -v $PWD:/work -w $PWD elpinguino/lakkabuild "DISTRO=Lakka PROJECT=Chip ARCH=arm make image"
