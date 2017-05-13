@@ -5,4 +5,5 @@ dist: xenial
 sudo: required
 
 script:
+    - sudo apt-get update && sudo apt-get install -y lsdiff gperf makeinfo lzop xsltproc
     - DISTRO=Lakka PROJECT=Chip ARCH=arm make image
