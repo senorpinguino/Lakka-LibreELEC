@@ -1,0 +1,8 @@
+language: c
+
+os: linux
+dist: xenial
+sudo: required
+
+script:
+    - DISTRO=Lakka PROJECT=Chip ARCH=arm make image
