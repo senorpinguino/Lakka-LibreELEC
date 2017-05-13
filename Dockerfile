@@ -13,7 +13,7 @@ bc \
 gawk \
 zip \
 unzip \
-xfont-utils \
+xfonts-utils \
 libcurses5-dev \
 
 
