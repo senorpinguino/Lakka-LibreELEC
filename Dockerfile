@@ -14,6 +14,6 @@ gawk \
 zip \
 unzip \
 xfonts-utils \
-libcurses5-dev \
+libncurses5-dev \
 
 
